@@ -21,7 +21,7 @@ struct usuario {
 usuario listaUsuarios[MAX_USUARIOS];
 int totalUsuarios = 0;
 
-// Módulo de Registro de Usuarios (Parte 1)
+// Módulo de Registro de Usuarios
 void registrarUsuario() {
     // if-else para controlar que no se exceda el límite de usuarios
     if (totalUsuarios < MAX_USUARIOS) {
@@ -52,10 +52,10 @@ void registrarUsuario() {
         
         totalUsuarios++;
         cout << "¡Usuario registrado exitosamente!" << endl;
-    } else {
+        }} else {
         cout << "\nError: No se pueden registrar mas usuarios, limite alcanzado." << endl;
+        }
     }
-}
 
 int main() {
     
